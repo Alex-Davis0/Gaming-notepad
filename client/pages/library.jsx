@@ -40,7 +40,7 @@ class Library extends React.Component {
     return (
       <>
       <NavBar />
-        <div className='container-xxl bg'>
+        <div className='container-xxl bg mar'>
           <div className='row'>
             {library}
           </div>
