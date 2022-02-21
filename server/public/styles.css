@@ -1,0 +1,17 @@
+body {
+  background-image: url("Images/gridoffset-videogames-1-1585583517.jpg");
+}
+
+.bg {
+  background-color: #000d6b;
+}
+
+.mar {
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.img-size {
+  width: 265px;
+  height: 149px;
+}
