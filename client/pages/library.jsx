@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../components/nav-bar';
 
-const url = 'https://api.rawg.io/api/games?key=2b1c564fe61d448fa953aa160239a72f&page_size=688028';
+const url = `https://api.rawg.io/api/games?key=${process.env.GAME_API_KEY}&page_size=688028`;
 class Library extends React.Component {
   constructor(props) {
     super(props);
