@@ -21,9 +21,7 @@ class Library extends React.Component {
       .then(json => {
         this.setState({ library: json.results });
       })
-      .catch(err => {
-        console.error(err);
-      });
+      .catch(err => console.error(err));
   }
 
   render() {
@@ -33,6 +31,7 @@ class Library extends React.Component {
       return (
         <div key={game.id} className='col-3'>
           <img className='img-size' src={game.background_image} alt="game.name" />
+          <h2 className='text-warning'>{game.name}</h2>
         </div>
       );
     }
@@ -41,7 +40,7 @@ class Library extends React.Component {
     return (
       <>
       <NavBar />
-        <div className='container-xxl'>
+        <div className='container-xxl bg'>
           <div className='row'>
             {library}
           </div>

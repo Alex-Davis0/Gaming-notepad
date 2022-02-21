@@ -14,7 +14,7 @@ export default function NotFound(props) {
     <div style={styles.pageContent}>
       <div className="row">
         <div className="col text-center mb-5">
-          <h3>
+          <h3 className='text-warning'>
             Uh oh, we could not find the page you were looking for!
           </h3>
           <p className="text-muted">

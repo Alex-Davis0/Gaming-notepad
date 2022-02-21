@@ -19,7 +19,7 @@ export default function NavBar(props) {
                   <a className="nav-link text-warning" href="#">Add Game</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-warning" href='#'>Library</a>
+                  <a className="nav-link text-warning" href='#library'>Library</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-warning" href='#'>Notes</a>
