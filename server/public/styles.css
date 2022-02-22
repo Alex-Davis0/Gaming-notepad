@@ -11,6 +11,17 @@ body {
   padding-top: 25px;
 }
 
+.color {
+  color: #ffc900;
+}
+
+.car {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1350px;
+  max-height: 759px;
+}
+
 .img-size {
   width: 265px;
   height: 149px;
