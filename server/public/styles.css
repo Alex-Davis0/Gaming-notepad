@@ -9,9 +9,10 @@ body {
 .mar {
   margin-top: 25px;
   padding-top: 25px;
+  padding-left: 45px;
 }
 
-.color {
+.yellow {
   color: #ffc900;
 }
 

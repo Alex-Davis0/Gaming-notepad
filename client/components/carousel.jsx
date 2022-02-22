@@ -35,18 +35,17 @@ class Carousel extends React.Component {
       );
     });
     return (
-    <div id='HomePage' className='carousel slide' data-bs-ride='carousel'>
-      <div className='carousel-inner car'>
-        <div className='carousel-item active' data-bs-interval='1000'>
-         </div>
+      <div id='HomePage' className='carousel carousel-dark slide  car' data-bs-ride='carousel'>
+      <div className='carousel-inner'>
+        <div className='carousel-item active' data-bs-interval='1000'></div>
         {carouselItem}
       </div>
       <button className='carousel-control-prev' type='button' data-bs-target='#HomePage' data-bs-slide='prev'>
-        <span className='carousel-control-prev-icon' aria-hidden='true'></span>
+          <span style={{ backgroundColor: 'black' }} className='carousel-control-prev-icon' aria-hidden='true'></span>
         <span className='visually-hidden'>Previous</span>
       </button>
       <button className='carousel-control-next' type='button' data-bs-target='#HomePage' data-bs-slide='next'>
-        <span className='carousel-control-next-icon' aria-hidden='true'></span>
+        <span style={{ backgroundColor: 'black' }} className='carousel-control-next-icon' aria-hidden='true'></span>
         <span className='visually-hidden'>Next</span>
       </button>
     </div >
