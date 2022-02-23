@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/home';
 import Library from './pages/library';
+import Notes from './pages/notes';
 import NotFound from './pages/not-found';
 import parseRoute from './lib/parse-route';
 export default class App extends React.Component {
@@ -24,6 +25,9 @@ export default class App extends React.Component {
     }
     if (route.path === 'library') {
       return <Library />;
+    }
+    if (route.path === 'notes') {
+      return <Notes />;
     }
     return <NotFound />;
   }
