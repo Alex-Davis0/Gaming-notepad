@@ -27,7 +27,8 @@ export default class App extends React.Component {
       return <Library />;
     }
     if (route.path === 'notes') {
-      return <Notes />;
+      const gameId = route.params.get('gameId');
+      return <Notes gameId={gameId}/>;
     }
     return <NotFound />;
   }
