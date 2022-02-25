@@ -58,14 +58,16 @@ class Notes extends React.Component {
       const { id, name, background_image: backgroundImage } = game;
       if (this.props.gameId === `${id}`) {
         return (
-          <form key={id} className='container' onSubmit={this.handleSubmit}>
-        <div className=' row mb-3 bg textarea-holder'>
-          <img src={backgroundImage} alt={name} />
-          <label className='form-label text-warning'>Game Notes</label>
-          <h2 className='text-warning'>{name}</h2>
-          <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange}/>
-          <button type='submit' className='btn btn-warning'>Submit</button>
-        </div>
+          <form key={id} className='container-xxl con' onSubmit={this.handleSubmit}>
+          <div className=' row mb-3 bg textarea-holder'>
+            <img className='notes-img align-self-start' src={backgroundImage} alt={name} />
+              <div className='col align-self-end'>
+                <label className='col form-label text-warning'>Game Notes</label>
+                <h2 className='text-warning'>{name}</h2>
+                <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange}/>
+                <button type='submit' className='btn btn-warning button'>Submit</button>
+              </div>
+          </div>
       </form>
         );
       }
