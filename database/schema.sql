@@ -27,6 +27,7 @@ CREATE TABLE "notes" (
     "noteId" serial NOT NULL,
     "note" TEXT NOT NULL,
     "userId" integer NOT NULL,
+    "gameId" integer NOT NULL,
     CONSTRAINT "notes_pk" PRIMARY KEY ("noteId")
 ) WITH (
   OIDS=FALSE

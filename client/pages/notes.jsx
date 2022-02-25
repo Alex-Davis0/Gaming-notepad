@@ -6,32 +6,32 @@ class Notes extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      library: []
+      library: [],
+      note: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ note: event.target.value });
   }
 
   handleSubmit() {
     event.preventDefault();
 
-    const formData = new FormData();
-
-    formData.append('caption', this.state.caption);
-    formData.append('image', this.fileInputRef.current.files[0]);
-
+    const postData = {
+      note: this.state.note,
+      gameId: this.props.gameId
+    };
     fetch('/api/notes', {
       method: 'POST',
-      body: formData
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(postData)
     })
       .then(
         res => res.json()
       )
-      .then(res => {
-        this.setState({
-          caption: ''
-        });
-        this.fileInputRef.current.value = null;
-      })
       .catch(err => console.error(err));
   }
 
@@ -58,12 +58,13 @@ class Notes extends React.Component {
       const { id, name, background_image: backgroundImage } = game;
       if (this.props.gameId === `${id}`) {
         return (
-      <form key={id} className='container'>
+          <form key={id} className='container' onSubmit={this.handleSubmit}>
         <div className=' row mb-3 bg textarea-holder'>
           <img src={backgroundImage} alt={name} />
           <label className='form-label text-warning'>Game Notes</label>
-          <textarea type="text" id="Notes" className='form-text textarea'/>
-          <button onSubmit={this.handleSubmit} type='submit' className='btn btn-warning'>Submit</button>
+          <h2 className='text-warning'>{name}</h2>
+          <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange}/>
+          <button type='submit' className='btn btn-warning'>Submit</button>
         </div>
       </form>
         );
