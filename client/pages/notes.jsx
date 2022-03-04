@@ -32,6 +32,9 @@ class Notes extends React.Component {
       .then(
         res => res.json()
       )
+      .then(res => {
+        this.setState({ note: '' });
+      })
       .catch(err => console.error(err));
   }
 
@@ -59,12 +62,12 @@ class Notes extends React.Component {
       if (this.props.gameId === `${id}`) {
         return (
           <form key={id} className='container-xxl con' onSubmit={this.handleSubmit}>
-          <div className=' row mb-3 bg textarea-holder'>
-            <img className='notes-img align-self-start' src={backgroundImage} alt={name} />
-              <div className='col align-self-end'>
-                <label className='col form-label text-warning'>Game Notes</label>
+          <div className=' row mb-3 bg textarea-holder align-items-center'>
+            <img className='notes-img align-self-center' src={backgroundImage} alt={name} />
+              <div className='col'>
+                <label className='form-label text-warning'>Game Notes</label>
                 <h2 className='text-warning'>{name}</h2>
-                <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange}/>
+                <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange} value={this.state.note}/>
                 <button type='submit' className='btn btn-warning button'>Submit</button>
               </div>
           </div>

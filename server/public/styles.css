@@ -35,24 +35,24 @@ body {
 }
 
 .textarea-holder {
-  margin-top: 10rem;
-  justify-content: center;
-  height: 450px;
+  margin-top: 2rem;
+  height: 743px;
   padding-top: 45px;
 }
 
 .textarea {
   resize: none;
-  width: 450px;
-  height: 253px;
+  width: 500px;
+  height: 281px;
   margin-right: 25px;
+  margin-bottom: 25px;
 }
 
 .button {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .notes-img {
-  width: 650px;
-  height: 366px;
+  width: 750px;
+  height: 422px;
 }
