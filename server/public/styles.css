@@ -2,6 +2,12 @@ body {
   background-image: url("Images/gridoffset-videogames-1-1585583517.jpg");
 }
 
+.a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
 .bg {
   background-color: #000d6b;
 }
@@ -26,4 +32,27 @@ body {
 .img-size {
   width: 265px;
   height: 149px;
+}
+
+.textarea-holder {
+  margin-top: 2rem;
+  height: 743px;
+  padding-top: 45px;
+}
+
+.textarea {
+  resize: none;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.button {
+  margin-bottom: 25px;
+}
+
+.notes-img {
+  width: 750px;
+  height: 422px;
 }

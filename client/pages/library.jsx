@@ -28,10 +28,11 @@ class Library extends React.Component {
     if (!this.state.library) return null;
     const stateArray = this.state.library;
     const library = stateArray.map(game => {
+      const { id, name, background_image: backgroundImage } = game;
       return (
-        <div key={game.id} className='col-3'>
-          <img className='img-size' src={game.background_image} alt="game.name" />
-          <h2 className='text-warning'>{game.name}</h2>
+        <div key={id} className='col-3'>
+          <img className='img-size' src={backgroundImage} alt="game.name" />
+          <a className='text-warning a' href={`#notes?gameId=${id}`}>{name}</a>
         </div>
       );
     }

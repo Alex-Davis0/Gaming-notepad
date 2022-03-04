@@ -1,5 +1,4 @@
 import React from 'react';
-
 const url = `https://api.rawg.io/api/games?key=${process.env.GAME_API_KEY}&page_size=688028`;
 
 class Carousel extends React.Component {
@@ -8,6 +7,7 @@ class Carousel extends React.Component {
     this.state = {
       library: []
     };
+    this.carouselRef = React.createRef();
   }
 
   componentDidMount() {
@@ -19,7 +19,12 @@ class Carousel extends React.Component {
         return res.json();
       })
       .then(json => {
-        this.setState({ library: json.results });
+        this.setState({ library: json.results }, () => {
+          // eslint-disable-next-line
+          const carousel = new bootstrap.Carousel(this.carouselRef.current);
+
+          carousel.cycle();
+        });
       })
       .catch(err => console.error(err));
   }
@@ -29,13 +34,13 @@ class Carousel extends React.Component {
     const stateArray = this.state.library;
     const carouselItem = stateArray.map(game => {
       return (
-        <div key={game.id} className='carousel-item' data-bs-interval='5000'>
+        <div key={game.id} className='carousel-item' data-bs-interval='3000'>
           <img src={game.background_image} className='d-block w-100' alt={game.name} />
         </div>
       );
     });
     return (
-      <div id='HomePage' className='carousel carousel-dark slide  car' data-bs-ride='carousel'>
+      <div id='HomePage' className='carousel carousel-dark slide  car' data-bs-ride='carousel' ref={this.carouselRef}>
       <div className='carousel-inner'>
         <div className='carousel-item active' data-bs-interval='1000'></div>
         {carouselItem}
