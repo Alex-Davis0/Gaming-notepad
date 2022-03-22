@@ -4,6 +4,7 @@ import Library from './pages/library';
 import Notes from './pages/notes';
 import NotFound from './pages/not-found';
 import parseRoute from './lib/parse-route';
+import NotesLib from './pages/notes-lib';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -29,6 +30,10 @@ export default class App extends React.Component {
     if (route.path === 'notes') {
       const gameId = route.params.get('gameId');
       return <Notes gameId={gameId}/>;
+    }
+    if (route.path === 'notesLib') {
+      const gameId = route.params.get('gameId');
+      return <NotesLib gameId={gameId} />;
     }
     return <NotFound />;
   }

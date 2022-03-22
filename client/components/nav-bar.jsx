@@ -22,7 +22,7 @@ export default function NavBar(props) {
                   <a className="nav-link text-warning" href='#library'>Library</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-warning" href='#notes'>Notes</a>
+                  <a className="nav-link text-warning" href='#notesLib'>Notes</a>
                 </li>
               </ul>
               <form className="d-flex">
