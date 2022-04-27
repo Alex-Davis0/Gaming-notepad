@@ -42,7 +42,7 @@ class Carousel extends React.Component {
     return (
       <div id='HomePage' className='carousel carousel-dark slide  car' data-bs-ride='carousel' ref={this.carouselRef}>
       <div className='carousel-inner'>
-        <div className='carousel-item active' data-bs-interval='1000'></div>
+        <div className='carousel-item active' data-bs-interval='2500'></div>
         {carouselItem}
       </div>
       <button className='carousel-control-prev' type='button' data-bs-target='#HomePage' data-bs-slide='prev'>
