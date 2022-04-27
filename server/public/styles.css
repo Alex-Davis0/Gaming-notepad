@@ -52,6 +52,13 @@ body {
   margin-bottom: 25px;
 }
 
+.trash {
+  color: #ffc900;
+  text-align: end;
+  padding-right: 5rem;
+  font-size: x-large;
+}
+
 .notes-img {
   width: 750px;
   height: 422px;
