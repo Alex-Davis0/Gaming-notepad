@@ -24,10 +24,11 @@ class NotesLib extends React.Component {
         res => res.json()
       )
       .catch(err => console.error(err));
+    event.reload();
   }
 
   handleSubmit(event, id) {
-    event.preventDefault();
+    // event.preventDefault();
     fetch('/api/notes/' + id, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
