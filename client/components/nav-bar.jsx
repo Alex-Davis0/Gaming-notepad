@@ -13,22 +13,12 @@ export default function NavBar(props) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active text-warning" aria-current="page" href="#">Favorites</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-warning" href="#">Add Game</a>
-                </li>
-                <li className="nav-item">
                   <a className="nav-link text-warning" href='#library'>Library</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-warning" href='#notesLib'>Notes</a>
                 </li>
               </ul>
-              <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                <button className="btn btn-outline-warning text-light" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </nav>

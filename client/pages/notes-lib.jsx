@@ -20,15 +20,11 @@ class NotesLib extends React.Component {
     fetch('/api/notes/' + id, {
       method: 'DELETE'
     })
-      .then(
-        res => res.json()
-      )
       .catch(err => console.error(err));
-    event.reload();
+    location.reload();
   }
 
   handleSubmit(event, id) {
-    // event.preventDefault();
     fetch('/api/notes/' + id, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -63,7 +59,7 @@ class NotesLib extends React.Component {
       return (
         <form key={id} id={id} className='container-xxl con' onSubmit={e => this.handleSubmit(e, id)}>
           <div className=' row mb-3 bg textarea-holder align-items-center'>
-            <button type='submit' className='btn trash fas fa-trash-alt' onClick={e => this.handleDelete(e, id)}></button>
+            <button type='button' className='btn trash fas fa-trash-alt' onClick={e => this.handleDelete(e, id)}></button>
             <img className='notes-img col' src={backgroundImage} alt={name} />
             <div className='col'>
               <h2 className='text-warning'>Notes</h2>

@@ -35,7 +35,7 @@ class Carousel extends React.Component {
     const carouselItem = stateArray.map(game => {
       return (
         <div key={game.id} className='carousel-item' data-bs-interval='3000'>
-          <img src={game.background_image} className='d-block w-100' alt={game.name} />
+          <img src={game.background_image} className='d-block w-100 car-img' alt={game.name} />
         </div>
       );
     });
