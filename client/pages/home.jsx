@@ -5,7 +5,9 @@ export default function Home(props) {
   return (
     <>
     <NavBar />
+    <div className='home-page'>
     <Carousel />
+    </div>
     </>
   );
 }
