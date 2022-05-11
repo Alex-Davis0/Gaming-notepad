@@ -22,6 +22,10 @@ body {
   color: #ffc900;
 }
 
+.home-page {
+  margin-top: 3rem;
+}
+
 .car {
   margin-left: auto;
   margin-right: auto;
