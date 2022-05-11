@@ -29,6 +29,12 @@ body {
   max-height: 759px;
 }
 
+.car-img {
+  max-width: 1350px;
+  min-height: 759px;
+  max-height: 759px;
+}
+
 .img-size {
   width: 265px;
   height: 149px;
