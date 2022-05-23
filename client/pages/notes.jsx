@@ -69,8 +69,10 @@ class Notes extends React.Component {
       <NavBar />
         <form key={id} className='container-xxl con' onSubmit={this.handleSubmit}>
           <div className=' row mb-3 bg textarea-holder align-items-center'>
+            <div className='col-6'>
             <img className='notes-img align-self-center' src={backgroundImage} alt={name} />
-            <div className='col'>
+            </div>
+            <div className='col-6'>
               <label className='form-label text-warning'>Game Notes</label>
               <h2 className='text-warning'>{name}</h2>
               <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange} value={this.state.note} />

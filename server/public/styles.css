@@ -5,7 +5,11 @@ body {
 .a {
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: large;
+}
+
+.h2-size {
+  font-size: x-large;
 }
 
 .bg {
@@ -30,13 +34,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1350px;
-  max-height: 759px;
+  height: 759px;
 }
 
 .car-img {
-  max-width: 1350px;
-  min-height: 759px;
-  max-height: 759px;
+  width: 1350px;
+  height: 759px;
 }
 
 .img-size {
@@ -44,32 +47,126 @@ body {
   height: 149px;
 }
 
+.end {
+  text-align: end;
+}
+
+.con {
+  width: 80%;
+  height: 100%;
+}
+
 .textarea-holder {
   margin-top: 2rem;
-  height: 743px;
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .textarea {
   resize: none;
-  width: 500px;
-  height: 281px;
+  width: 80%;
+  height: 250px;
   margin-right: 25px;
   margin-bottom: 25px;
 }
 
 .button {
-  margin-bottom: 25px;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .trash {
   color: #ffc900;
-  text-align: end;
-  padding-right: 5rem;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .notes-img {
-  width: 750px;
-  height: 422px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .car {
+    margin-top: 17rem;
+    margin-bottom: 15rem;
+    width: 350px;
+    height: 181px;
+    align-items: center;
+  }
+
+  .car-img {
+    width: 350px;
+    height: 181px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .car {
+    margin-top: 15rem;
+    width: 675px;
+    height: 400px;
+  }
+
+  .car-img {
+    width: 675px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .library {
+    width: 100%;
+  }
+
+  .img-size {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .library {
+    width: 50%;
+  }
+
+  .img-size {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .trash {
+    color: #ffc900;
+    font-size: large;
+  }
+
+  .h2-size {
+    font-size: large;
+  }
+
+  .textarea {
+    resize: none;
+    width: 80%;
+    height: 100%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .trash {
+    color: #ffc900;
+    font-size: x-large;
+  }
+
+  .h2-size {
+    font-size: x-large;
+  }
+
+  .textarea {
+    resize: none;
+    width: 80%;
+    height: 250px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
 }

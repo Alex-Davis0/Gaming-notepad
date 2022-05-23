@@ -30,9 +30,9 @@ class Library extends React.Component {
     const library = stateArray.map(game => {
       const { id, name, background_image: backgroundImage } = game;
       return (
-        <div key={id} className='col-3'>
+        <div key={id} className='col-3 library'>
           <img className='img-size' src={backgroundImage} alt="game.name" />
-          <a className='text-warning a' href={`#notes?gameId=${id}`}>{name}</a>
+          <a className='text-warning a bg' href={`#notes?gameId=${id}`}>{name}</a>
         </div>
       );
     }
@@ -42,7 +42,7 @@ class Library extends React.Component {
     return (
       <>
       <NavBar />
-        <div className='container-xxl bg mar'>
+        <div className='container-xxl mar'>
           <div className='row'>
             {library}
           </div>
