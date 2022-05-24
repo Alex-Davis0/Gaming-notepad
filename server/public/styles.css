@@ -45,6 +45,7 @@ body {
 .img-size {
   width: 265px;
   height: 149px;
+  margin-right: 3rem;
 }
 
 .end {
@@ -119,7 +120,7 @@ body {
   }
 
   .img-size {
-    margin-right: 1rem;
+    margin-right: 10rem;
   }
 }
 
@@ -129,7 +130,7 @@ body {
   }
 
   .img-size {
-    margin-right: 3rem;
+    margin-right: 7rem;
   }
 }
 
@@ -140,7 +141,7 @@ body {
   }
 
   .h2-size {
-    font-size: large;
+    font-size: medium;
   }
 
   .textarea {
@@ -165,7 +166,7 @@ body {
   .textarea {
     resize: none;
     width: 80%;
-    height: 250px;
+    height: 200px;
     margin-right: 25px;
     margin-bottom: 25px;
   }
