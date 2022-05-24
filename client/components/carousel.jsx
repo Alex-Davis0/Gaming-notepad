@@ -34,7 +34,7 @@ class Carousel extends React.Component {
     const stateArray = this.state.library;
     const carouselItem = stateArray.map(game => {
       return (
-        <div key={game.id} className='carousel-item' data-bs-interval='3000'>
+        <div key={game.id} className='carousel-item' data-bs-interval='2500'>
           <img src={game.background_image} className='d-block w-100 car-img' alt={game.name} />
         </div>
       );
@@ -42,7 +42,7 @@ class Carousel extends React.Component {
     return (
       <div id='HomePage' className='carousel carousel-dark slide  car' data-bs-ride='carousel' ref={this.carouselRef}>
       <div className='carousel-inner'>
-        <div className='carousel-item active' data-bs-interval='2500'></div>
+        <div className='carousel-item active' data-bs-interval='100'></div>
         {carouselItem}
       </div>
       <button className='carousel-control-prev' type='button' data-bs-target='#HomePage' data-bs-slide='prev'>
