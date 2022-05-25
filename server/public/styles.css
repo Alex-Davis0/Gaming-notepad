@@ -57,6 +57,12 @@ body {
   height: 100%;
 }
 
+.note-textarea-holder {
+  margin-top: 2rem;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 .textarea-holder {
   margin-top: 2rem;
   padding-top: 45px;
@@ -142,6 +148,12 @@ body {
 
   .h2-size {
     font-size: medium;
+  }
+
+  .note-textarea-holder {
+    margin-top: 8rem;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .textarea {

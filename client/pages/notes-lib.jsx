@@ -59,18 +59,18 @@ class NotesLib extends React.Component {
       return (
         <form key={id} id={id} className='container-xxl con bg' onSubmit={e => this.handleSubmit(e, id)}>
           <div className=' row mb-3  textarea-holder align-items-center'>
-            <div className='col-7'>
+            <div className='col-12'>
             <img className='notes-img' src={backgroundImage} alt={name} />
             </div>
-            <div className='col-5'>
-                          <div className='end'>
-            <button type='button' className='btn trash fas fa-trash-alt' onClick={e => this.handleDelete(e, id)}></button>
-            </div>
+            <div className='col-12'>
+              <div className='end'>
+                <button type='button' className='btn trash fas fa-trash-alt' onClick={e => this.handleDelete(e, id)}></button>
+              </div>
               <h2 className='text-warning h2-size'>Notes for</h2>
               <h2 className='text-warning h2-size'>{name}</h2>
               <textarea type="text" id="Notes" className='form-text textarea' value={note} onChange={e => this.handleChange(e, id)}/>
               <div className='end'>
-              <button type='submit' className='btn btn-warning button'>Submit</button>
+                <button type='submit' className='btn btn-warning button'>Submit</button>
               </div>
             </div>
           </div>
