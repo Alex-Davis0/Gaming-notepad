@@ -67,15 +67,17 @@ class Notes extends React.Component {
     return (
       <>
       <NavBar />
-        <form key={id} className='container-xxl con' onSubmit={this.handleSubmit}>
-          <div className=' row mb-3 bg note-textarea-holder align-items-center'>
+        <form key={id} className='container-lg' onSubmit={this.handleSubmit}>
+          <div className=' row mb-3 bg textarea-holder align-items-center'>
             <div className='col-12'>
-            <img className='notes-img align-self-center' src={backgroundImage} alt={name} />
+              <img className='notes-img align-self-center' src={backgroundImage} alt={name} />
             </div>
             <div className='col-12'>
-              <label className='form-label text-warning'>Game Notes</label>
+              <label className='form-label text-warning label-size'>Game Notes</label>
               <h2 className='text-warning'>{name}</h2>
               <textarea type="text" id="Notes" className='form-text textarea' onChange={this.handleChange} value={this.state.note} />
+            </div>
+            <div className='end'>
               <button type='submit' className='btn btn-warning button'>Submit</button>
             </div>
           </div>

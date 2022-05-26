@@ -8,6 +8,10 @@ body {
   font-size: large;
 }
 
+.label-size {
+  font-size: 2rem;
+}
+
 .h2-size {
   font-size: x-large;
 }
@@ -52,15 +56,14 @@ body {
   text-align: end;
 }
 
-.con {
+.add-note-size {
   width: 80%;
   height: 100%;
 }
 
-.note-textarea-holder {
-  margin-top: 2rem;
-  padding-top: 45px;
-  padding-bottom: 45px;
+.add-note-sizes {
+  width: 80%;
+  height: 100%;
 }
 
 .textarea-holder {
@@ -148,12 +151,6 @@ body {
 
   .h2-size {
     font-size: medium;
-  }
-
-  .note-textarea-holder {
-    margin-top: 8rem;
-    padding-top: 45px;
-    padding-bottom: 45px;
   }
 
   .textarea {
