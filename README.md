@@ -28,6 +28,12 @@ Try the application live at (https://gaming-notepad.herokuapp.com/)
 - User can edit their notes.
 - User can delete a created note. 
 
+## Stretch Features
+
+- User can sign up
+- User can sign in
+- User can sign out 
+
 ## Preview
 
 ![Animation 1](https://user-images.githubusercontent.com/93169087/170900234-c393cbb4-5d27-4bd5-91ee-4aefeaeecd26.gif)
